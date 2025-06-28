@@ -64,8 +64,8 @@ void gRoot(void)
       struct cred *newcreds = prepare_creds();
       if (newcreds)
         {
-          newcreds->uid.val = 0;
-          newcreds->gid.val = 0;
+          newcreds->uid.val  = 0;
+          newcreds->gid.val  = 0;
           newcreds->euid.val = 0;
           newcreds->egid.val = 0;
           commit_creds(newcreds);
