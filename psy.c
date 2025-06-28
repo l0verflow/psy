@@ -57,10 +57,10 @@ static int proc_open(struct inode *inode, struct file *file)
 }
 
 static const struct file_operations proc_fops = {
-    .owner = THIS_MODULE,
-    .open = proc_open,
-    .read = seq_read,
-    .llseek = seq_lseek,
+    .owner   = THIS_MODULE,
+    .open    = proc_open,
+    .read    = seq_read,
+    .llseek  = seq_lseek,
     .release = single_release,
 };
 
